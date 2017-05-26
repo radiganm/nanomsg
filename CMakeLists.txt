@@ -42,6 +42,9 @@ endif ()
 set (NN_DESCRIPTION "High-Performance Scalability Protocols")
 set (ISSUE_REPORT_MSG "Please consider opening an issue at https://github.com/nanomsg/nanomsg")
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(NN_STATIC_LIB ON)
+
 # Determine library versions.
 
 file (READ src/nn.h NN_HDR_STR)
